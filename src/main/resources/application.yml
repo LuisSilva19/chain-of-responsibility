@@ -1,0 +1,13 @@
+#otel:
+#  exporter:
+#    prometheus:
+#      enabled: true
+
+baseUrl: http://localhost:8080
+
+opentelemetry:
+  trace:
+    exporter: jaeger
+    exporter.jaeger:
+      endpoint: http://localhost:14250 # Substitua pelo endpoint Jaeger correto
+      service-name: your-service-name
